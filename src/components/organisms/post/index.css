@@ -1,0 +1,35 @@
+.react-hn-post-url {
+    color: inherit;
+}
+
+.react-hn-post-url:visited {
+    color: #888;
+}
+
+.react-hn-post-url:hover {
+    text-decoration: none;
+}
+
+.react-hn-post-domain {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.react-hn-post-sub {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.react-hn-post-sub .link {
+    color: #888;
+}
+
+.react-hn-post-sub .link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.react-hn-post-number {
+    color: #888;
+    min-width: 3em;
+}

@@ -1,0 +1,13 @@
+.react-hn-navbar-row {
+    margin-left: 2em;
+}
+
+.page-link.disabled {
+    color: #888;
+    cursor: not-allowed;
+}
+
+.page-link.disabled:hover, .page-link.disabled:focus {
+    text-decoration: none;
+    color: inherit;
+}

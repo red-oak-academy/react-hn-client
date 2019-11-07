@@ -1,0 +1,16 @@
+.react-hn-comment-container {
+    margin-left: 0.8em;
+}
+
+.react-hn-comment-container .react-hn-comment-container {
+    margin-left: 2em;
+}
+
+.react-hn-comment-info-header {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.react-hn-comment-content {
+    font-size: 0.8em;
+}

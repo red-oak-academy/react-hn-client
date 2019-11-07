@@ -1,0 +1,4 @@
+.react-hn-comment-expansion:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

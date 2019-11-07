@@ -1,0 +1,14 @@
+.react-hn-title {
+    font-weight: bold;
+    margin-left: 0;
+    color:inherit;
+}
+
+.react-hn-title:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.react-hn-navbar {
+    background-color: #c62327;
+}
