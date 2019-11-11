@@ -45,7 +45,7 @@ function Pagination(props) {
                     {buttons}
 
                     <li className="page-item">
-                        <Link className="page-link"
+                        <Link className={clsx({"page-link" : true, "disabled" : currentPage === maxPage})}
                             onClick={currentPage === maxPage ? (e) => e.preventDefault() : undefined}
                             to={`/${props.postsSection}/${currentPage === maxPage ? currentPage : currentPage+1}`}
                         >
