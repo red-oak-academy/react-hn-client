@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A deployed version is available at [Netlify](https://roc-react-hn-client.netlify.com/).
 
 ## Available Scripts
 
