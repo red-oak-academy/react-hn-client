@@ -47,7 +47,7 @@ function Pagination(props) {
                     <li className="page-item">
                         <Link className="page-link"
                             onClick={currentPage === maxPage ? (e) => e.preventDefault() : undefined}
-                            to={`/${props.postsSection}/${currentPage === maxPage ? currentPage : currentPage-+1}`}
+                            to={`/${props.postsSection}/${currentPage === maxPage ? currentPage : currentPage+1}`}
                         >
                             <span aria-hidden="true">&raquo;</span>
                             <span className="sr-only">Next</span>
