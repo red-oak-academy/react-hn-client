@@ -9,12 +9,12 @@ const HnApi = {
         if ((requestedPage < 1) || (requestedPage > 12))
             throw new Error(`the request page ${requestedPage} is not in the expected range.`);
 
-        let response =  await Axios.get(`https://api.hnpwa.com/v0/${feedType}/${requestedPage}.json`);
-        return response.data.map((data, idx) => ({...data, number: idx + 1 + ((requestedPage -1) * pageLength)}));
+        let response = await Axios.get(`https://api.hnpwa.com/v0/${feedType}/${requestedPage}.json`);
+        return response.data.map((data, idx) => ({...data, number: idx + 1 + ((requestedPage - 1) * pageLength)}));
     },
 
     getPostDetails: async (postId) => {
-        let response =  await Axios.get(`https://api.hnpwa.com/v0/item/${postId}.json`);
+        let response = await Axios.get(`https://api.hnpwa.com/v0/item/${postId}.json`);
         return response.data;
     }
 }

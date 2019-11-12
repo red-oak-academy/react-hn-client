@@ -19,7 +19,7 @@ Expansion.propTypes = {
 }
 
 function getExpandString(count) {
-    if(count > 0) {
+    if (count > 0) {
         return `[+${count}]`
     } else {
         return '[+]'

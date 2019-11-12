@@ -3,9 +3,9 @@ import {useState, useEffect} from "react";
 export function useAPI(method, ...params) {
 
 
-    const [data, setData]           = useState(undefined);
+    const [data, setData] = useState(undefined);
     const [isLoading, setIsLoading] = useState(false);
-    const [error, setError]          = useState(undefined);
+    const [error, setError] = useState(undefined);
 
     const fetchData = async () => {
         setError(undefined);
@@ -19,7 +19,9 @@ export function useAPI(method, ...params) {
         }
     };
 
-    useEffect(() => { fetchData() }, []);
+    useEffect(() => {
+        fetchData()
+    }, []);
 
-    return [ data, isLoading, error, fetchData ];
+    return [data, isLoading, error, fetchData];
 }

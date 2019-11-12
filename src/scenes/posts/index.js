@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import PostsTemplate from '../../components/templates/posts'
 import HnApi from '../../api/hnApi'
 import PropTypes from 'prop-types'
@@ -15,7 +15,7 @@ class PostsScene extends Component {
 
     fetchNews = (section, page) => {
         HnApi.getNewsFeed(section, page)
-            .then((data) => this.setState({ posts: data, postsLoading: false }))
+            .then((data) => this.setState({posts: data, postsLoading: false}))
             .catch(console.log);
     }
 
@@ -24,7 +24,7 @@ class PostsScene extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if(prevProps.postsSection !== this.props.postsSection || prevProps.page !== this.props.page) {
+        if (prevProps.postsSection !== this.props.postsSection || prevProps.page !== this.props.page) {
             this.fetchNews(this.props.postsSection, this.props.page);
         }
     }

@@ -1,15 +1,17 @@
 import sanitizeHtml from "sanitize-html"
 
 const defaultOptions = {
-    allowedTags: [ 'b', 'i', 'em', 'strong', 'a', 'p' ],
+    allowedTags: ['b', 'i', 'em', 'strong', 'a', 'p'],
     allowedAttributes: {
-      'a': [ 'href' ]
+        'a': ['href']
     },
-  };
-  
-  export default function sanitize(dirty, options) { return {
-    __html: sanitizeHtml(
-      dirty, 
-      { ...defaultOptions, ...options }
-    )
-  }};
+};
+
+export default function sanitize(dirty, options) {
+    return {
+        __html: sanitizeHtml(
+            dirty,
+            {...defaultOptions, ...options}
+        )
+    }
+};

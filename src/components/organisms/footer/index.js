@@ -5,8 +5,8 @@ import FooterLinks from '../../molecules/footerLinks'
 function Footer() {
     return (
         <Fragment>
-            <RowDivider />
-            <FooterLinks />
+            <RowDivider/>
+            <FooterLinks/>
         </Fragment>
     )
 }

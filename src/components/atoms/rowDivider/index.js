@@ -3,7 +3,7 @@ import "./index.css";
 
 function RowDivider() {
     return (
-        <div className="row react-hn-row-divider"></div>
+        <div className="row react-hn-row-divider"/>
     )
 }
 

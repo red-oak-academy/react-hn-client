@@ -23,7 +23,7 @@ function Comment(props) {
 
             {expanded && <div>
                 <div className="react-hn-comment-content">
-                    <span dangerouslySetInnerHTML={sanitize(props.content)}></span>
+                    <span dangerouslySetInnerHTML={sanitize(props.content)}/>
                 </div>
             </div>}
 

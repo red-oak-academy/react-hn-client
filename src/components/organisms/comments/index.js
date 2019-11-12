@@ -5,13 +5,13 @@ import Comment from "../comment"
 function Comments(props) {
     return (
         <Fragment>
-            {props.comments.map(comment => <Comment {...comment}></Comment>)}
+            {props.comments.map(comment => <Comment {...comment}/>)}
         </Fragment>
     )
 }
 
 Comments.propTypes = {
-    comments : PropTypes.array.isRequired
+    comments: PropTypes.array.isRequired
 }
 
 export default Comments
